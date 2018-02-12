@@ -19,6 +19,10 @@ h2 {
 	margin-bottom: 209px;
 }
 
+a {
+	text-decoration: none;
+}
+
 .center-screen {
     position: absolute;
     left: 50%;
@@ -40,5 +44,34 @@ h2 {
 	display: block;
 	margin: 0 auto 28px;
 	letter-spacing: 0.0357143em;
-	
+	cursor: pointer;
+}
+
+.input-container {
+
+}
+
+.input-container img {
+	opacity: 0.54;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.input-container input {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+	margin-bottom: 32px;
+	padding-bottom: 7px;
+}
+
+.input-container input::placeholder {
+	color: rgba(0, 0, 0, 0.68);
+}
+
+.title-page {
+	margin-bottom: 48px;
+}
+
+.margin-top {
+	margin-top: 17px;
 }
