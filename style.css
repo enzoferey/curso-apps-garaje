@@ -75,3 +75,8 @@ a {
 .margin-top {
 	margin-top: 17px;
 }
+
+.error {
+	color: red;
+	display: none;
+}
