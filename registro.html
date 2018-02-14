@@ -51,6 +51,9 @@
 			else if(usuario == "" || correo == "" || contraseña == "") {
 				mostrarError("Hay algún campo vacío");
 			}
+			else {
+				window.location.href = "login.html";
+			}
 		});
 
 		function mostrarError(mensaje) {
