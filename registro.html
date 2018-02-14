@@ -52,7 +52,15 @@
 				mostrarError("Hay algún campo vacío");
 			}
 			else {
-				window.location.href = "login.html";
+				$.post("https://curso-apps-garaje.herokuapp.com/register",
+					{ 
+						username: usuario,
+						email: correo,
+						password: contraseña
+					},function(data){
+		            	console.log(data);
+				  		window.location.href = "login.html";
+		        });
 			}
 		});
 

@@ -40,7 +40,19 @@
 				mostrarError("Hay algún campo vacío");
 			}
 			else {
-				window.location.href = "home.html";
+				$.get("https://curso-apps-garaje.herokuapp.com/login",
+					{ 
+						email: correo,
+						password: contraseña
+					},function(data){
+		            	console.log(data);
+		            	if(data == "Login OKAY") {
+				  			window.location.href = "home.html";
+				  		}
+				  		else {
+				  			mostrarError(data);
+				  		}
+		        });
 			}
 		});
 
