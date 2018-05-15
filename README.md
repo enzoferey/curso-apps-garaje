@@ -1,2 +1,2 @@
 # curso-apps-garaje
-App sencilla con login
+Simple app with login for a course
